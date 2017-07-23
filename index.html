@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
+<!--Code here is terrible. You've been warned. I'm not a web developer.-->
+
 <head>
 
     <meta charset="utf-8">
@@ -14,10 +16,10 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta property="og:title" content="Oleg Filimonov" />
-    <meta property="og:description" content="Personal website of a pretty good android developer" />
-    <meta property="og:image" content="http://olegfilimonov.com/img/profile.png" />
-    <meta property='og:url' content="http://olegfilimonov.com" />
+    <meta property="og:title" content="Oleg Filimonov"/>
+    <meta property="og:description" content="Personal website of a pretty good android developer"/>
+    <meta property="og:image" content="http://olegfilimonov.com/img/profile.png"/>
+    <meta property='og:url' content="http://olegfilimonov.com"/>
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -65,6 +67,9 @@
                     <a href="#about">About</a>
                 </li>
                 <li class="page-scroll">
+                    <a href="#code-example">My code</a>
+                </li>
+                <li class="page-scroll">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -100,6 +105,7 @@
                 <br>
             </div>
         </div>
+
         <div class="row">
             <div class="col-sm-4 col-xs-6 portfolio-item">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -215,47 +221,75 @@
     </div>
 </section>
 
+<!-- Code Example Section -->
+<section id="code-example">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>My CODE</h2>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-8 col-offset-2 text-center">
+
+            <p> If you considering hiring me and are familiar with Android Development you probably would like to
+                check my code style, what architecture I prefer to use and which libraries I use. For that reason
+                I've created a github repo of a simple android app with a sole purpose of showcasing my code style.
+            </p>
+        </div>
+        <br/>
+        <div class="row">
+            <a href="https://github.com/OlegFilimonov/gifer/tree/master">
+                <img class="img-responsive img-centered" src="img/code.png"/>
+            </a>
+        </div>
+        <br/>
+
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="https://github.com/OlegFilimonov/gifer/tree/master" class="btn btn-lg btn-outline-inverted">
+                Check it out on GitHub
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+
 <!-- Contact Section -->
-<section id="contact">
+<section class="success" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Contact Me</h2>
                 <br>
-                <br>
+                <p> Ordered by preference
+                </p>
             </div>
         </div>
-        <div class="row">
-
-
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="https://t.me/olegfilimonov"
-                   class="btn btn-lg btn-outline-inverted">
-                    TELEGRAM: @olegfilimonov
-                </a>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="mailto:themraction@gmail.com"
-                   class="btn btn-lg btn-outline-inverted">
-                    EMAIL: themraction@gmail.com
-                </a>
-            </div>
-
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="skype:qufilimonov?chat"
-                   class="btn btn-lg btn-outline-inverted">
-                    SKYPE: qufilimonov
-                </a>
-            </div>
-
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="https://www.linkedin.com/in/olegfilimonov"
-                   class="btn btn-lg btn-outline-inverted">
-                    LINKEDIN: olegfilimonov
-                </a>
-            </div>
-
-
+        <div class="row text-center">
+            <a href="https://t.me/olegfilimonov"
+               class="btn btn-lg btn-outline">
+                TELEGRAM: @olegfilimonov
+            </a>
+        </div>
+        <div class="row text-center">
+            <a href="mailto:themraction@gmail.com"
+               class="btn btn-lg btn-outline">
+                EMAIL: themraction@gmail.com
+            </a>
+        </div>
+        <div class="row text-center">
+            <a href="skype:qufilimonov?chat"
+               class="btn btn-lg btn-outline">
+                SKYPE: qufilimonov
+            </a>
+        </div>
+        <div class="row text-center">
+            <a href="https://www.linkedin.com/in/olegfilimonov"
+               class="btn btn-lg btn-outline">
+                LINKEDIN: olegfilimonov
+            </a>
         </div>
     </div>
 </section>
@@ -266,7 +300,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Oleg Filimonov 2017 <br><br>Thanks to <a href="http://davidmiller.io/">David Miller</a> for the awesome theme<br>Thanks to <a href="https://androidify.com/en/#/">Androidify</a> for the avatar
+                    Copyright &copy; Oleg Filimonov 2017 <br><br>Thanks to <a href="http://davidmiller.io/">David
+                    Miller</a> for the awesome theme<br>Thanks to <a href="https://androidify.com/en/#/">Androidify</a>
+                    for the avatar
                 </div>
             </div>
         </div>
@@ -281,7 +317,7 @@
 </div>
 
 <!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -359,7 +395,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -448,7 +484,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -520,7 +556,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -582,7 +618,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
