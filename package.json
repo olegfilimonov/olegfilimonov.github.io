@@ -1,19 +1,19 @@
 {
-  "name": "freelancer",
-  "title": "Freelancer",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/freelancer",
-  "author": "Start Bootstrap",
+  "name": "olegfilimonov",
+  "title": "Oleg Filimonov",
+  "version": "2.1.0",
+  "homepage": "http://olegfilimonov.com/",
+  "author": "Oleg Filimonov",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+    "url": "https://github.com/OlegFilimonov/olegfilimonov.github.io/blob/master/LICENSE"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
+    "gulp-clean-css": "^3.7.0",
     "gulp-filter": "^4.0.0",
     "gulp-header": "^1.8.7",
     "gulp-less": "^3.1.0",
