@@ -361,36 +361,36 @@ Based on https://github.com/BlackrockDigital/startbootstrap-freelancer.git
                         </a>
                     </div>
                     <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/2.png" data-toggle="lightbox">
+                        <a href="img/portfolio/ownage_screenshots/2.png">
                             <img src="img/portfolio/ownage_screenshots/2%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/4.png">
                             <img src="img/portfolio/ownage_screenshots/4%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/5.png">
                             <img src="img/portfolio/ownage_screenshots/5%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/6.png">
                             <img src="img/portfolio/ownage_screenshots/6%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/7.png">
                             <img src="img/portfolio/ownage_screenshots/7%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/8.png">
                             <img src="img/portfolio/ownage_screenshots/8%20(Small).png" class="img-responsive">
                         </a>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6" data-toggle="lightbox">
+                    <div class="col-sm-4 col-md-3 col-xs-6">
                         <a href="img/portfolio/ownage_screenshots/9.png">
                             <img src="img/portfolio/ownage_screenshots/9%20(Small).png" class="img-responsive">
                         </a>
@@ -638,6 +638,7 @@ Based on https://github.com/BlackrockDigital/startbootstrap-freelancer.git
         </div>
     </div>
 </div>
+
 <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -707,7 +708,9 @@ Based on https://github.com/BlackrockDigital/startbootstrap-freelancer.git
 <script>
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
-        $(this).ekkoLightbox();
+        $(this).ekkoLightbox({
+            alwaysShowClose: true
+        });
     });
 </script>
 
