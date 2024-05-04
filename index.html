@@ -1,782 +1,162 @@
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-
-<!--
-
-Code here is terrible. You've been warned. I'm not a web developer.
-Based on https://github.com/BlackrockDigital/startbootstrap-freelancer.git
-
--->
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Oleg</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Learn more about Oleg and get in touch.">
 
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#282828">
+  <meta property="og:title" content="Contact Oleg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Contact Oleg">
 
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
 
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal website of a pretty good react native developer">
-    <meta name="author" content="Oleg Filimonov">
-    <!-- OG -->
-    <meta property="og:title" content="Oleg Filimonov"/>
-    <meta property="og:description" content="Personal website of a pretty good react native developer"/>
-    <meta property="og:image" content="http://olegfilimonov.com/img/profile.png"/>
-    <meta property='og:url' content="http://olegfilimonov.com"/>
+  <script src="https://kit.fontawesome.com/5c8be7e8f4.js" crossorigin="anonymous"></script>
 
-    <!-- Icon -->
-    <link rel="icon" href="img/profile.png">
+  <style>
+      :root {
+          --main-bg-color: #f5f5f5;
+          --main-text-color: #333;
+          --android-color: #a4c639;
+          --react-color: #61dafb;
+          --ios-color: #999999;
+          --button-hover-bg-color: #ddd;
+          --button-hover-border-color: #555;
+      }
 
-    <title>Oleg Filimonov</title>
+      [data-theme="dark"] {
+          --main-bg-color: #333;
+          --main-text-color: #f5f5f5;
+          --button-hover-bg-color: #555;
+          --button-hover-border-color: #ddd;
+      }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: var(--main-bg-color);
+          color: var(--main-text-color);
+          font-family: "Comic Neue", cursive;
+          font-weight: 400;
+          font-size: 24px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
 
-    <!--Lightbox CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" rel="stylesheet">
+      .theme-toggle {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 24px;
+          cursor: pointer;
+      }
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-          type="text/css">
+      h1 {
+          font-size: 64px;
+      }
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      h2 {
+          font-size: 32px;
+          margin-bottom: 0;
+      }
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+      p {
+          font-size: 24px;
+          text-align: center;
+      }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      h1, h2, p, .contact-button {
+          transition: color 0.3s ease;
+      }
 
+      .contact-button {
+          font-size: 24px;
+          padding: 8px 16px;
+          background-color: transparent;
+          border: 2px solid var(--main-text-color);
+          border-radius: 16px;
+          cursor: pointer;
+          font-family: "Comic Neue", cursive;
+          margin: 8px;
+      }
+
+      .contact-button:hover {
+          background-color: var(--button-hover-bg-color);
+          border-color: var(--button-hover-border-color);
+      }
+
+      .fa {
+          color: var(--main-text-color);
+      }
+
+      .fa-android {
+          color: var(--android-color);
+      }
+
+      .fa-react {
+          color: var(--react-color);
+      }
+
+      .fa-apple {
+          color: var(--ios-color);
+      }
+  </style>
 </head>
 
-<body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <a class="navbar-brand" href="#page-top">Oleg Filimonov</a>
-        </div>
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
-<!-- Header -->
-<header>
-    <div class="container" id="maincontent" tabindex="-1">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/profile.png" alt="Main">
-                <div class="intro-text">
-                    <h1 class="name">Oleg Filimonov</h1>
-                    <hr class="star-light">
-                    <span class="skills">I'm a Freelance mobile developer</span>
-                </div>
-            </div>
-        </div>
-        <div style="margin-top: 2vh" class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="https://www.toptal.com/resume/oleg-filimonov#assume-only-devoted-software-freelance-experts" class="btn btn-lg btn-outline"
-               target="_blank">
-                Hire me on Toptal
-            </a>
-        </div>
-    </div>
-</header>
-
-
-
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>My Apps</h2>
-                <br>
-                <br>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/ownage.png" class="img-responsive" alt="Ownage">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/three_min_passion.png" class="img-responsive" alt="Three Min Passion">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/sleep_time.png" class="img-responsive" alt="Sleep Time">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/poker_hands.png" class="img-responsive" alt="Poker Hands">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/color_match.png" class="img-responsive" alt="Color Match">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/blanana.png" class="img-responsive" alt="Color Match">
-                </a>
-            </div>
-            <div class="col-sm-4 col-xs-6 portfolio-item">
-                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/tuyap.png" class="img-responsive" alt="Color Match">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section class="success" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Contact Me</h2>
-                <br>
-                <p> Ordered by preference
-                </p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <a href="https://t.me/LordToplady" target="_blank"
-               class="btn btn-lg btn-outline">
-                TELEGRAM: @LordToplady
-            </a>
-        </div>
-        <div class="row text-center">
-            <a href="mailto:themraction@gmail.com" target="_blank"
-               class="btn btn-lg btn-outline">
-                EMAIL: themraction@gmail.com
-            </a>
-        </div>
-        <div class="row text-center">
-            <a href="https://www.linkedin.com/in/olegfilimonov" target="_blank"
-               class="btn btn-lg btn-outline">
-                LINKEDIN: olegfilimonov
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; Oleg Filimonov <br><br>Thanks to <a
-                        href="https://github.com/BlackrockDigital/startbootstrap-freelancer.git" target="_blank">David
-                    Miller</a> for the awesome theme<br>Thanks to <a href="https://androidify.com/en/#/"
-                                                                     target="_blank">Androidify</a>
-                    for the avatar
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
+<body data-theme="light">
+<i class="fas fa-moon theme-toggle" onclick="toggleTheme()"></i>
+<h1>Hi I'm Oleg 👋</h1>
+<p>I make <i class="fa fa-brands fa-android"></i> Android and <i class="fa-brands fa-apple"></i> iOS mobile apps <br />
+  using <i class="fa fa-brands fa-react"></i> React Native</p>
+<h2>Get in touch</h2>
+<div class="row">
+  <button class="contact-button" onclick="window.location.href='mailto:themraction@gmail.com';"><i
+      class="fa fa-solid fa-envelope"></i></button>
+  <button class="contact-button" onclick="window.location.href='https://www.linkedin.com/in/olegfilimonov/';"><i
+      class="fa fa-brands fa-linkedin-in"></i></button>
 </div>
+<script>
+  function toggleTheme() {
+    const currentTheme = document.body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.body.setAttribute('data-theme', newTheme);
+    updateIcon();
+  }
 
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Ownage Pranks (made in 2017)</h2>
-                    <hr class="star-primary">
+  function updateIcon() {
+    const themeIcon = document.querySelector('.theme-toggle');
+    if (document.body.getAttribute('data-theme') === 'dark') {
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+    } else {
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+    }
+  }
 
-                    <p>Ownage Pranks Real Prank Calls - app that allows user to send a automated prank call to someone.
-                        User can enter the number, press "send call" and seconds later the recipient will get a call
-                        from anonymous number. Users then can listen to the call live as it happens.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/1.png">
-                            <img src="img/portfolio/ownage_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/2.png">
-                            <img src="img/portfolio/ownage_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/4.png">
-                            <img src="img/portfolio/ownage_screenshots/4%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/5.png">
-                            <img src="img/portfolio/ownage_screenshots/5%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/6.png">
-                            <img src="img/portfolio/ownage_screenshots/6%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/7.png">
-                            <img src="img/portfolio/ownage_screenshots/7%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/8.png">
-                            <img src="img/portfolio/ownage_screenshots/8%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/ownage_screenshots/9.png">
-                            <img src="img/portfolio/ownage_screenshots/9%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://play.google.com/store/apps/details?id=com.prankcalllabs.prankcallapp&hl=en"
-                   target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Three Min Passion (made in 2017)</h2>
-                    <hr class="star-primary">
-
-                    <p>An app that allows users to explore a collection of interactive lessons. Each lesson
-                        is dynamically drawn and animated from server data and can be paused or rewound to each word.
-                        Each image or word can be a link to another lesson or quiz. A graph of all lessons allows users
-                        to explore and see what they have missed. Also contains a chat, credit system, coupon system,
-                        pure study mode and loop mode, and many more features.
-                    </p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/1.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/1%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/2.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/2%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/4.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/4%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/5.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/5%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/6.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/6%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/7.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/7%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/three_min_passion_screenshots/8.png">
-                            <img src="img/portfolio/three_min_passion_screenshots/8%20(Small).png"
-                                 class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <a href="http://android.myapp.com/myapp/detail.htm?apkName=cn.afterclass.three_min_passion"
-                   target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON MYAPP
-                </a>
-                <p>
-                    (Google play is blocked in China)
-                </p>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Sleep Time (made in 2016)</h2>
-                    <hr class="star-primary">
-
-                    <p>Sleep Time is a very simple app that tells you when to go to sleep to make the most of the night.
-                        Has some customization and the ability to turn off ads.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/1.png">
-                            <img src="img/portfolio/sleep_time_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/2.png">
-                            <img src="img/portfolio/sleep_time_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/3.png">
-                            <img src="img/portfolio/sleep_time_screenshots/3%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/4.png">
-                            <img src="img/portfolio/sleep_time_screenshots/4%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/5.png">
-                            <img src="img/portfolio/sleep_time_screenshots/5%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/6.png">
-                            <img src="img/portfolio/sleep_time_screenshots/6%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-3 col-xs-6">
-                        <a href="img/portfolio/sleep_time_screenshots/7.png">
-                            <img src="img/portfolio/sleep_time_screenshots/7%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://play.google.com/store/apps/details?id=ru.olegfilimonov.sleeptime" target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Poker Hands (made in 2016)</h2>
-                    <hr class="star-primary">
-
-                    <p>A simple app that shows user poker combinations with randomly generated examples.
-                        Also has a poker hand recognition game.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/poker_hands_screenshots/1.png">
-                            <img src="img/portfolio/poker_hands_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/poker_hands_screenshots/2.png">
-                            <img src="img/portfolio/poker_hands_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/poker_hands_screenshots/3.png">
-                            <img src="img/portfolio/poker_hands_screenshots/3%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/poker_hands_screenshots/4.png">
-                            <img src="img/portfolio/poker_hands_screenshots/4%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/poker_hands_screenshots/5.png">
-                            <img src="img/portfolio/poker_hands_screenshots/5%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://play.google.com/store/apps/details?id=com.daletbat.pokerhands" target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Color Match (made in 2016)</h2>
-                    <hr class="star-primary">
-
-                    <p>A game of match-5 with some twists and powerups. Made using LibGDX so it's a cross-platform
-                        app.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/color_match_screenshots/1.png">
-                            <img src="img/portfolio/color_match_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/color_match_screenshots/2.png">
-                            <img src="img/portfolio/color_match_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/color_match_screenshots/3.png">
-                            <img src="img/portfolio/color_match_screenshots/3%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://play.google.com/store/apps/details?id=com.daletbat.colormatchFree.android"
-                   target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>Blanana (made in 2016)</h2>
-                    <hr class="star-primary">
-
-                    <p>App for a location based social network.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/1.png">
-                            <img src="img/portfolio/blanana_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/2.png">
-                            <img src="img/portfolio/blanana_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/3.png">
-                            <img src="img/portfolio/blanana_screenshots/3%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/4.png">
-                            <img src="img/portfolio/blanana_screenshots/4%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/5.png">
-                            <img src="img/portfolio/blanana_screenshots/5%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/6.png">
-                            <img src="img/portfolio/blanana_screenshots/6%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/7.png">
-                            <img src="img/portfolio/blanana_screenshots/7%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/8.png">
-                            <img src="img/portfolio/blanana_screenshots/8%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/blanana_screenshots/9.png">
-                            <img src="img/portfolio/blanana_screenshots/9%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <a href="#"
-                   target="_blank"
-                   type="button" class="btn disabled btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-                <p>
-                    (coming soon)
-                </p>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <h2>MyTuyap (made in 2016)</h2>
-                    <hr class="star-primary">
-
-                    <p>Fair app with custom google maps based indoor navigation and dynamic themes.</p>
-
-                    <br>
-
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/1.png">
-                            <img src="img/portfolio/tuyap_screenshots/1%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/2.png">
-                            <img src="img/portfolio/tuyap_screenshots/2%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/3.png">
-                            <img src="img/portfolio/tuyap_screenshots/3%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/4.png">
-                            <img src="img/portfolio/tuyap_screenshots/4%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/5.png">
-                            <img src="img/portfolio/tuyap_screenshots/5%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/6.png">
-                            <img src="img/portfolio/tuyap_screenshots/6%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/7.png">
-                            <img src="img/portfolio/tuyap_screenshots/7%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6">
-                        <a href="img/portfolio/tuyap_screenshots/8.png">
-                            <img src="img/portfolio/tuyap_screenshots/8%20(Small).png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <a href="https://play.google.com/store/apps/details?id=com.indoora.tuyap"
-                   target="_blank"
-                   type="button" class="btn btn-lg btn-outline-inverted">
-                    GET IT ON GOOGLE PLAY
-                </a>
-            </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-lg btn-outline-inverted" data-dismiss="modal"><i
-                        class="fa fa-times"></i>
-                    CLOSE
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<!-- Lightbox -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/freelancer.js"></script>
-
+  // Automatically set the theme on initial load
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.setAttribute('data-theme', 'dark');
+    updateIcon();
+  }
+</script>
 </body>
 
 </html>
