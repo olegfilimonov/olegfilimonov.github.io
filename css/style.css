@@ -240,6 +240,8 @@ textarea {
   --android-color: #a4c639;
   --react-color: #61dafb;
   --ios-color: #999999;
+  --snake-color: #D3D3D3;
+  --food-color: #90EE90;
 }
 
 [data-theme="dark"] {
@@ -247,6 +249,8 @@ textarea {
   --main-text-color: #E8EAED;
   --button-hover-bg-color: #5F6368;
   --button-hover-border-color: #c4c4c4;
+  --snake-color: #D3D3D3;
+  --food-color: #90EE90;
 }
 
 body {
@@ -254,6 +258,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   height: 100vh;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -261,6 +266,8 @@ body {
   font-weight: 400;
   font-size: 24px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
 .theme-toggle {
@@ -331,3 +338,33 @@ h1, h2, p, .contact-button {
   color: var(--ios-color);
 }
 
+#gameCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
+
+.game-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-controls {
+  display: flex;
+}
+
+.game-controls i {
+  cursor: pointer;
+  margin: 5px;
+  color: var(--main-text-color); /* Adjust based on your theme */
+}
+
+.hidden {
+  display: none;
+}
