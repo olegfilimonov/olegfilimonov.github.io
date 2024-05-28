@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oleg Filimonov</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <meta name="description" content="Personal website">
-
   <meta property="og:title" content="Oleg Filimonov">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://olegfilimonov.dev/">
@@ -15,9 +14,9 @@
   <meta property="og:image:alt" content="">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +27,6 @@
   <script src="https://kit.fontawesome.com/5c8be7e8f4.js" crossorigin="anonymous"></script>
 </head>
 <body data-theme="light">
-<i class="fas fa-dragon game-button" id="startGame"></i>
-<i class="fas fa-moon theme-toggle" onclick="toggleTheme()"></i>
 <h1>Hi, I'm Oleg 👋</h1>
 <p>I make <i class="fa-inline fa fa-brands fa-apple"></i>iOS and <i class="fa-inline fa fa-brands fa-android"></i>Android
   mobile apps <br />
@@ -41,6 +38,8 @@
   <button class="contact-button" onclick="window.location.href='https://www.linkedin.com/in/olegfilimonov/';"><i
       class="fa fa-brands fa-linkedin-in"></i></button>
 </div>
+<i class="fas fa-moon theme-toggle" onclick="toggleTheme()"></i>
+<i class="fas fa-dragon game-button" id="startGame"></i>
 <div class="game-controls">
   <i class="fas fa-arrow-up" id="moveUp"></i>
   <div class="horizontal-controls">
@@ -50,7 +49,7 @@
   </div>
 </div>
 <canvas id="gameCanvas"></canvas>
-<script src="js/app.js"></script>
-<script src="js/firebase.js" type="module"></script>
+<script src="/js/app.js"></script>
+<script src="/js/firebase.js" type="module"></script>
 </body>
 </html>
